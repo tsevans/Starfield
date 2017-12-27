@@ -8,7 +8,6 @@ Starfiled is a program written with Processing 3.3.6 which simulates a "warp spe
 ![WhiteStars](Demos/WhiteStars.gif)
 
 <br>
-<br>
 
 ### Click and hold right mouse button to change stars from white to random RGB colors.
 ![ColorStars](Demos/ColorStars.gif)
