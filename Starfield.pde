@@ -1,5 +1,5 @@
 //Create array of stars for the field
-Star[] stars = new Star[800];
+Star[] stars = new Star[750];
 
 float speed;
 
@@ -8,7 +8,7 @@ float speed;
  */
 void setup()
 {
-  size(600, 600);
+  size(900, 900);
   
   for (int x = 0; x < stars.length; x++)
   {

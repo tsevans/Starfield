@@ -41,8 +41,18 @@ class Star
    */
   void show()
   {
-    //Makes the star white
-    fill(255);
+    float red = random(0, 255);
+    float green = random(0, 255);
+    float blue = random(0, 255);
+    
+    if (mousePressed){
+      //Stars are random rainbow color
+      fill(color(red, green, blue));
+    }
+    else{
+      //Stars are white
+      fill(255);
+    }
     noStroke();
     
     //Determines speed in the x and y directions according to the z axis
@@ -57,7 +67,14 @@ class Star
     
     pz = z;
     
-    stroke(255);
+    //Color matching for streaks
+    if (mousePressed){
+      stroke(color(red, green, blue));
+    }
+    else{
+      stroke(255);
+    }
+    
     line(px, py, sx, sy);
   }
 }
